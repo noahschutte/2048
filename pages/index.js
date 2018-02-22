@@ -4,19 +4,13 @@ import { Card, Button } from 'semantic-ui-react';
 import Layout from '../components/Layout';
 import { Link } from '../routes';
 
+import BoardView from '../components/BoardView';
+
 class Play extends Component {
 	render() {
 		return (
 			<Layout>
-				<div>
-					<h3>Start Game</h3>
-
-					<Link route="/">
-						<a>
-							<Button floated="left" content="Start Game" icon="play" primary />
-						</a>
-					</Link>
-				</div>
+				<BoardView />
 			</Layout>
 		);
 	}

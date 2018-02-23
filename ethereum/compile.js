@@ -5,8 +5,8 @@ const fs = require('fs-extra');
 const buildPath = path.resolve(__dirname, 'build');
 fs.removeSync(buildPath);
 
-const gamePath = path.resolve(__dirname, 'contracts', 'Game.sol');
-const source = fs.readFileSync(gamePath, 'utf8');
+const arcadePath = path.resolve(__dirname, 'contracts', 'Arcade.sol');
+const source = fs.readFileSync(arcadePath, 'utf8');
 const output = solc.compile(source, 1).contracts;
 
 fs.ensureDirSync(buildPath);
